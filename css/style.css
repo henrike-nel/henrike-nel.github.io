@@ -822,7 +822,8 @@ input.input-xlg, .input-xlg {
 
 textarea {
     height: 120px;
-    font-size: 13px !important;
+    font-size: 14px !important;
+    
 }
 
 label {
@@ -865,16 +866,46 @@ form label.error {
     margin-top: 3px;
     color: #e1534f;
     font-size: 12px;
-    font-weight: 400;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.notify{  
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:0;  
+    box-sizing:border-box;
+    color:white;  
+    text-align:center;
+    background:rgba(0,0,0,.6);
+    overflow:hidden;
+    box-sizing:border-box;
+    transition:height .2s;
+  }
+  
+  #notifyType:before{
+    display:block;
+    margin-top:15px; 
+    
+  }
+  
+  .active{  
+    height:50px;
+  }
+  
+.successsfully-sent:before{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    Content:"Aww Yeaaaaa! Your message has been sent.";
+  }
+
 
 .successContent, .errorContent {
     margin-bottom: 20px;
     display: none;
     text-transform: none;
-    letter-spacing: 1px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
 }
 
 .newsletter-input {

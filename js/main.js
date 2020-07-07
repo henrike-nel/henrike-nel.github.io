@@ -51,3 +51,13 @@ $(function() {
         });
     
     });
+
+    $("#successfully-sent").click(function () {
+        $(".notify").toggleClass("active");
+        $("#notifyType").toggleClass("successfully-sent");
+        
+        setTimeout(function(){
+          $(".notify").removeClass("active");
+          $("#notifyType").removeClass("successfully-sent");
+        },2000);
+      });
