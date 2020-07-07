@@ -1,6 +1,6 @@
 <?php
 
-$to = $_POST['henrike.nel@icloud.com']; // my email address
+$to = $_POST['henrike.nel@gmail.com']; // my email address
 
 
 $name = $_POST['name'];
