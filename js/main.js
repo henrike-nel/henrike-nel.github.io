@@ -39,3 +39,15 @@ $(function() {
             animationType: 'push'
         });
     });
+
+    $(document).ready(function() {
+
+        $('.icon-tab-nav li a').click(function(event){
+            event.preventDefault();
+            $('.icon-tab-nav li a').removeClass('active');
+            $(this).addClass('active');
+            $('.achievements-pane text-center-achievements mb-sm-45').hide();
+            $($(this).attr('href')).show();
+        });
+    
+    });

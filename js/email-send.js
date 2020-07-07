@@ -33,4 +33,4 @@
             alert('Oops... ' + JSON.stringify(error));
         });
 
-    }},);
+    })});
