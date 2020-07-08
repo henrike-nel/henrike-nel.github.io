@@ -823,7 +823,6 @@ input.input-xlg, .input-xlg {
 textarea {
     height: 120px;
     font-size: 14px !important;
-    
 }
 
 label {
@@ -869,36 +868,34 @@ form label.error {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.notify{  
-    position:absolute;
-    top:0px;
-    width:100%;
-    height:0;  
-    box-sizing:border-box;
-    color:white;  
-    text-align:center;
-    background:rgba(0,0,0,.6);
-    overflow:hidden;
-    box-sizing:border-box;
-    transition:height .2s;
-  }
-  
-  #notifyType:before{
-    display:block;
-    margin-top:15px; 
-    
-  }
-  
-  .active{  
-    height:50px;
-  }
-  
-.successsfully-sent:before{
+.notify {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 0;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: height .2s;
+}
+
+#notifyType:before {
+    display: block;
+    margin-top: 15px;
+}
+
+.active {
+    height: 50px;
+}
+
+.successsfully-sent:before {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
-    Content:"Aww Yeaaaaa! Your message has been sent.";
-  }
-
+    Content: "Aww Yeaaaaa! Your message has been sent.";
+}
 
 .successContent, .errorContent {
     margin-bottom: 20px;
@@ -2506,86 +2503,6 @@ header.header-light .nav-bar-icon>span, header.header-light .nav-bar-icon>span:b
 .pushmenu-push {
     overflow-x: hidden;
     position: relative;
-}
-
-/* Left Sidebar Menu Css --------*/
-
-.pushmenu-right {
-    right: -270px;
-}
-
-.pushmenu-right.pushmenu-open {
-    right: 0;
-}
-
-.pushmenu-push-left {
-    left: 0;
-}
-
-.pushmenu-push-toleft {
-    left: -270px;
-}
-
-/* Transition */
-
-.pushmenu, .pushmenu-push {
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-}
-
-/* Sidebar Menu Inner */
-
-.side-menu {
-    background: #222222 !important;
-    z-index: 2005 !important;
-    color: #fff;
-    padding: 30px;
-    overflow-y: auto;
-}
-
-.side-menu .menu-close {
-    left: auto;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    display: inline-block;
-    color: #fff;
-    font-size: 18px;
-    line-height: 0;
-    overflow: hidden;
-}
-
-.side-menu .menu-close:hover {
-    color: #17a697;
-}
-
-.side-menu a {
-    color: #aaa;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: "Open Sans", sans-serif;
-    line-height: 26px;
-}
-
-.side-menu a:hover, .side-menu a.current, .side-menu a.active {
-    color: #fff;
-}
-
-.side-menu ul {
-    padding: 0;
-}
-
-.side-menu ul li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-.side-menu>ul>li>a {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: block;
 }
 
 .pushmenu-left {
