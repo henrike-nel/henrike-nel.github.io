@@ -8,52 +8,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Sans+Pro:wght@200;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500&family=Inconsolata:wght@200;300;400;600&family=Inria+Serif:wght@300;700&family=Overpass+Mono:wght@300&display=swap');
-/*
-* BASIC
-  - General Style    
-  - Typography Style    
-  - Button Style
-  - Form Style    
-  - Spacer Style
+/* if desktop */
 
-* HEADER
-  - Header
-  - Logo Style
-  - Navigation Menu Style
-  - Overlay Menu
-  - Sidebar Menu
+.mobile_device_380px {
+    display: none;
+}
 
-* INTRO
-  - intro
+.mobile_device_480px {
+    display: none;
+}
 
-* ELEMENTS
-  - Skills Bar
-  - Team Box
-  - Tabs
-  - Accordion & Toggle
-  - Counter
-  - Pricing-box
-  - Action-box
-  - History-box
-  - Client Logo
-  - Social
-  - pagination
-  - Contact Form, Map, contact-info
-  - Preloader
-  - Countdown Clock
-  
-* FOOTER
-  - Social
-  - Copyright
+/* if mobile device max width 380px */
 
-* GLOBEL
-  - Content Box (Services Box, Featured Box, icon-box, etc...)
-  - Slider
-  - Portfolio (Isotop Grid, box, Portfolio Single Page, etc...)
-  - Blog (Blog box, Blog page)
+@media only screen and (max-device-width: 380px) {
+    .mobile_device_380px {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
 
+/* if mobile device max width 480px */
 
-*/
+@media only screen and (max-device-width: 480px) {
+    .mobile_device_480px {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
 
 /* General Style */
 
@@ -302,9 +287,7 @@ p, .nav-menu {
 }
 
 h1, h2, h3, h4, h5, h6, .btn, button, .link, .link-dark, link-color, button, input, textarea, select, .portfolio-filter, p.lead-lg, .lead-lg, .overlay-menu-nav, .accordion .accordion-title, .toggle .toggle-title {
-    /*font-family: 'Work Sans', sans-serif;*/
     font-family: 'Nanum Gothic', sans-serif;
-    /*font-family: 'Ubuntu', sans-serif;*/
 }
 
 @keyframes blink {
@@ -594,7 +577,7 @@ ul.list-none {
     margin: 0;
 }
 
-/*Links & Anchor Tag*/
+/* Links & Anchor Tag*/
 
 .dark-bg a {}
 
