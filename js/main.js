@@ -42,11 +42,43 @@ $(function() {
 
     $(document).ready(function() {
 
-        $('.icon-tab-nav li a').click(function(event){
-            event.preventDefault();
-            $('.icon-tab-nav li a').removeClass('active');
+        $("#academics").click(function(event){
+            $('.achievements-pane').removeClass('active');
+            $(".achievements-pane").toggleClass("#academics");
             $(this).addClass('active');
-            $('.achievements-pane text-center-achievements mb-sm-45').hide();
+            $("#leadership").hide();
+            $("#acting").hide();
+            $("#public_speaking").hide();
+            $($(this).attr('href')).show();
+        });
+
+        $("#leadership").click(function(event){
+            $('.achievements-pane').removeClass('active');
+            $(".achievements-pane").toggleClass("#leadership");
+            $(this).addClass('active');
+            $("#academics").hide();
+            $("#acting").hide();
+            $("#public_speaking").hide();
+            $($(this).attr('href')).show();
+        });
+
+        $("#acting").click(function(event){
+            $('.achievements-pane').removeClass('active');
+            $(".achievements-pane").toggleClass("#acting");
+            $(this).addClass('active');
+            $("#leadership").hide();
+            $("#academics").hide();
+            $("#public_speaking").hide();
+            $($(this).attr('href')).show();
+        });
+
+        $("#public_speaking").click(function(event){
+            $('.achievements-pane').removeClass('active');
+            $(".achievements-pane").toggleClass("#public_speaking");
+            $(this).addClass('active');
+            $("#leadership").hide();
+            $("#acting").hide();
+            $("#academics").hide();
             $($(this).attr('href')).show();
         });
     

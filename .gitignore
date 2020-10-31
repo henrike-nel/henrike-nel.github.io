@@ -13,19 +13,6 @@
 # Ignore all local history of files
 .history
 
-# Eclipse
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders
-
 # VisualStudioCode
 .vscode/*
 !.vscode/settings.json
@@ -33,16 +20,6 @@ local.properties
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-
-# NetBeans
-**/nbproject/private/
-**/nbproject/Makefile-*.mk
-**/nbproject/Package-*.bash
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
 
 # Maven
 /target/

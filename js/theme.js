@@ -45,7 +45,6 @@ $(function () {
             return false;
         });
 
-        // Click To Down And Up Elements
         $('.scroll-down[href^="#"], .scroll-to-target[href^="#"]').on('click', function (e) {
             e.preventDefault();
 
@@ -78,7 +77,6 @@ $(function () {
     // ----------------------------------------------------------------
     function int_introHeight() {
         var windiwHeight = $(window).height();
-        // Intro Height
         $('.js-fullscreen-height').css('height', windiwHeight);
     };
 
