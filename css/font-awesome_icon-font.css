@@ -708,6 +708,10 @@
   content: "\f082";
 }
 
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
 .fa-camera-retro:before {
   content: "\f083";
 }
@@ -798,6 +802,16 @@
 
 .fa-facebook-f:before, .fa-facebook:before {
   content: "\f09a";
+}
+
+.fa-facebook-black:before {
+  content: "\f09a";
+  color: black;
+}
+
+.fa-facebook-black:hover {
+  content: "\f16d";
+  color: #fff;
 }
 
 .fa-github:before {
@@ -1534,6 +1548,16 @@
 
 .fa-instagram:before {
   content: "\f16d";
+}
+
+.fa-instagram-black:before {
+  content: "\f16d";
+  color: black;
+}
+
+.fa-instagram-black:hover {
+  content: "\f16d";
+  color: #fff;
 }
 
 .fa-flickr:before {

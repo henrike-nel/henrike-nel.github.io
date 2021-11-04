@@ -8,6 +8,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Sans+Pro:wght@200;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500&family=Inconsolata:wght@200;300;400;600&family=Inria+Serif:wght@300;700&family=Overpass+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+/* fonts */
+
+@font-face {
+    font-family: "Alta Caption";
+    src: url('/fonts/alta/alta_caption-webfont.woff2') format('woff2'), url('/fonts/alta/alta_caption-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alta Light";
+    src: url('/fonts/alta/alta_light-webfont.woff2') format('woff2'), url('/fonts/alta/alta_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Alta Regular";
+    src: url('/fonts/alta/alta_regular-webfont.woff2') format('woff2'), url('/fonts/alta/alta_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* if desktop */
 
 .mobile_device_380px {
@@ -28,12 +52,11 @@
 }
 
 .blog-post {
-    position: center;
-    padding-bottom: 10px;
-    object-fit: contain;
-    display: inline-block;
-    max-width: 50%;
+    float: left;
+    max-width: 35%;
     height: auto;
+    margin-right: 10px;
+    padding: 5px;
 }
 
 /* General Style */
@@ -63,6 +86,8 @@ body {
 
 .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6, .dark-bg p, .dark-bg p.small, .dark-bg p.large, .dark-bg p.lead, .dark-bg p.lead-lg, .dark-bg .page-icon, .dark-bg .page-icon-sm, .dark-bg ul, .dark-bg ol, .dark-bg li, .dark-bg .alt-icon-top, .dark-bg .alt-icon-left, .dark-bg .alt-icon-right, .dark-bg .counter-icon, .dark-bg .skill-bar-percent {
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 .bg-image {
@@ -180,11 +205,12 @@ hr {
 /* Font Style */
 
 p, .nav-menu {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .btn, button, .link, .link-dark, link-color, button, input, textarea, select, .portfolio-filter, p.lead-lg, .lead-lg, .overlay-menu-nav, .accordion .accordion-title, .toggle .toggle-title {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .p-b-30 {
@@ -342,7 +368,8 @@ p.small {
 
 p.large {
     font-size: 16px;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #000;
 }
@@ -368,10 +395,12 @@ p.prog-skills {
 }
 
 p.lead-about {
+    padding-top: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-weight: 200;
     color: #000;
+    text-align: left;
 }
 
 p.lead-lg {
@@ -446,10 +475,6 @@ ul.list-none {
 
 /* Links & Anchor Tag*/
 
-.dark-bg a {}
-
-.dark-bg a:hover {}
-
 a {
     outline: none;
     text-decoration: none;
@@ -478,6 +503,7 @@ a {
 
 .btn, button {
     font-size: 12px;
+    font-family: 'Roboto', sans-serif;
     line-height: 1;
     font-weight: 600;
     letter-spacing: 1px;
@@ -531,10 +557,23 @@ i.right {
     border-radius: 14px;
 }
 
-.btn-black:hover {
+.btn-white:hover {
     background-color: #dbd7e4dc;
     border-color: transparent;
     color: black;
+}
+
+.btn-white:hover {
+    background-color: #dbd7e4dc;
+    border-color: transparent;
+    color: black;
+}
+
+.btn-white {
+    background-color: #fff;
+    border-color: transparent;
+    color: black;
+    border-radius: 14px;
 }
 
 .btn-color {
@@ -556,8 +595,14 @@ i.right {
     color: #222;
 }
 
-.btn-white:hover {
+.btn-purple:hover {
     background-color: #3f3b49be;
+    border-color: transparent;
+    color: #222;
+}
+
+.btn-white:hover {
+    background-color: #fff;
     border-color: transparent;
     color: #222;
 }
@@ -568,10 +613,23 @@ i.right {
     color: #fff;
 }
 
-.btn-white-outline:hover {
+.btn-purple-outline {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-purple-outline:hover {
     background-color: #3f3b49be;
     border-color: transparent;
     color: #fff;
+    font-weight: 600;
+}
+
+.btn-white-outline:hover {
+    background-color: #fff;
+    border-color: transparent;
+    color: black;
     font-weight: 600;
 }
 
@@ -1868,7 +1926,6 @@ form label.error {
 /* Logo Style */
 
 .logo {
-    float: left;
     text-align: left;
     display: inline-block;
 }
@@ -1962,7 +2019,6 @@ form label.error {
 
 .nav-bar-icon {
     display: inline-block;
-    float: right;
     position: relative;
     height: 16px;
     width: 20px;
@@ -2127,7 +2183,6 @@ header.header-light .nav-bar-icon>span, header.header-light .nav-bar-icon>span:b
     }
     .nav-bar-icon, .nav-mobile.nav-bar-icon, .header-fixed .nav-bar-icon {
         display: inline-block;
-        float: right;
         margin-top: 21px;
         margin-bottom: 21px;
     }
@@ -2419,6 +2474,15 @@ header.header-light .nav-bar-icon>span, header.header-light .nav-bar-icon>span:b
     letter-spacing: 1.5px;
 }
 
+.intro-noto-serif {
+    font-size: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    line-height: 1.1;
+    font-family: 'Noto Serif Display', serif;
+}
+
 .intro-title {
     font-size: 70px;
     margin-top: 40px;
@@ -2449,7 +2513,7 @@ header.header-light .nav-bar-icon>span, header.header-light .nav-bar-icon>span:b
 }
 
 .inner-intro h1 {
-    font-size: 54px;
+    font-size: 44px;
     margin-top: 30px;
 }
 
@@ -2516,10 +2580,7 @@ header.header-light .nav-bar-icon>span, header.header-light .nav-bar-icon>span:b
     margin-bottom: 7px;
 }
 
-.skillbar-title, .skill-bar-percent {}
-
 .skill-bar-percent {
-    float: right;
     display: inline-block;
     font-weight: 400;
     margin-top: 3px;
@@ -2643,7 +2704,6 @@ ul.icon-tab-nav:after {
 
 .history-box:hover i:before {
     background: linear-gradient(to right, #222835 0%, #4e6877 70%);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -2654,8 +2714,6 @@ ul.icon-tab-nav:after {
     display: inline-block;
     margin-bottom: 15px;
 }
-
-.history-title {}
 
 .history-sub-title {
     margin-bottom: 15px;
@@ -2937,6 +2995,13 @@ form .error {
     letter-spacing: 4px;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+.copy-link-black {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: black;
 }
 
 .icon-top, .icon-left, .icon-right {
