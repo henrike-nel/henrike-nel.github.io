@@ -100,6 +100,17 @@ body {
     width: 100%;
 }
 
+.bg-image-full {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .bg-fixed {
     background-attachment: fixed;
 }
@@ -1445,6 +1456,10 @@ form label.error {
     margin-top: 50px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mb-50 {
     margin-bottom: 50px !important;
 }
@@ -2474,7 +2489,7 @@ header.header-light .nav-bar-icon>span, header.header-light .nav-bar-icon>span:b
     letter-spacing: 1.5px;
 }
 
-.intro-noto-serif {
+.intro-noto-serif h1 {
     font-size: 70px;
     margin-top: 40px;
     margin-bottom: 40px;
