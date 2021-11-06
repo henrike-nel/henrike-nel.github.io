@@ -38,16 +38,13 @@
     display: none;
 }
 
-@media only screen and (max-device-width: 380px) {
+@media (max-device-width: 380px) {
     img {
-        width: 100%;
+        display: none;
     }
     .blog-post {
-        position: center;
-        object-fit: contain;
-        display: inline-block;
-        max-width: 100%;
-        height: auto;
+        text-align: center;
+        align-items: center;
     }
 }
 
@@ -88,6 +85,11 @@ body {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Roboto', sans-serif; */
+}
+
+p.lead-lg-black {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .bg-image {
@@ -256,6 +258,13 @@ h1.tab-heading {
     padding-bottom: 10px;
 }
 
+h1.tab-heading-black {
+    font-size: 46px;
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 10px;
+    color: black;
+}
+
 h1 {
     font-size: 46px;
 }
@@ -414,6 +423,17 @@ p.lead-about {
     text-align: left;
 }
 
+@media (max-device-width: 380px) {
+    p.lead-about {
+        padding-top: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+        color: #000;
+        text-align: left;
+    }
+}
+
 p.lead-lg {
     font-size: 20px;
     font-weight: 300;
@@ -546,6 +566,26 @@ i.right {
     display: inline-block;
 }
 
+@media (max-device-width: 380px) {
+    .btn-color {
+        background-color: #3f3b49be;
+        border-color: transparent;
+        color: #fff;
+        border-radius: 14px;
+        display: inline-block;
+    }
+    .btn {
+        background-color: #3f3b49be;
+        border-color: transparent;
+        color: #fff;
+        border-radius: 14px;
+        display: inline-block;
+    }
+    .btn-md {
+        display: inline-block;
+    }
+}
+
 .btn-md {
     padding: 13px 25px !important;
     display: inline-block;
@@ -585,6 +625,7 @@ i.right {
     border-color: transparent;
     color: black;
     border-radius: 14px;
+    float: left;
 }
 
 .btn-color {
@@ -592,12 +633,14 @@ i.right {
     border-color: transparent;
     color: #fff;
     border-radius: 14px;
+    float: left;
 }
 
 .btn-color:hover {
     background-color: #111111dc;
     border-color: transparent;
     color: white;
+    float: left;
 }
 
 .btn-white {
@@ -2970,6 +3013,39 @@ form .error {
     display: inline-block;
     list-style: outside none none;
     margin: 0 8px;
+}
+
+.footer .social-circle {
+    list-style: outside none none;
+    padding: 0;
+}
+
+.footer .social-circle li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 8px;
+}
+
+.footer .social-circle li a {
+    border: 1px solid #222;
+    display: block;
+    font-size: 14px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    width: 30px;
+    border-radius: 50%;
+    background: #222;
+    color: #fff;
+}
+
+.footer .social-circle li a i, .footer .social-circle li a span {
+    border-radius: 50%;
+}
+
+.footer .social-circle li a:hover {
+    background: #222 none repeat scroll 0 0;
+    color: #fff;
 }
 
 .footer .social li a {

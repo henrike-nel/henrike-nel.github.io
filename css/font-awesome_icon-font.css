@@ -814,6 +814,16 @@
   color: #fff;
 }
 
+.fa-facebook-white:before {
+  content: "\f09a";
+  color: white;
+}
+
+.fa-facebook-white:hover {
+  content: "\f16d";
+  color: #fff;
+}
+
 .fa-github:before {
   content: "\f09b";
 }
@@ -1550,14 +1560,24 @@
   content: "\f16d";
 }
 
+.fa-instagram-white:before {
+  content: "\f16d";
+  color: white;
+}
+
+.fa-instagram-white:before {
+  content: "\f16d";
+  color: white;
+}
+
 .fa-instagram-black:before {
   content: "\f16d";
   color: black;
 }
 
-.fa-instagram-black:hover {
+.fa-instagram-black:before {
   content: "\f16d";
-  color: #fff;
+  color: black;
 }
 
 .fa-flickr:before {
