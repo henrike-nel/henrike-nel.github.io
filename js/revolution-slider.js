@@ -1,9 +1,6 @@
 $(function () {
     "use strict";
 
-
-
-
     $(document).ready(function () {
         // Slider Default
         $('.intro-RevSlider').revolution({
@@ -65,13 +62,6 @@ $(function () {
                 $('#header').addClass('header');
             }
             // console.log("rev slide color: " + color);
-
         });
-
-
     });
-
-
-
-
 });
