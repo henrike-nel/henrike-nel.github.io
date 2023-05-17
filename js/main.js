@@ -40,76 +40,49 @@ $(function () {
     });
 });
 
-
-const secondary_btn = document.getElementById("secondary");
-
-secondary_btn.onclick = function () {
-    if (targetDiv.style.display !== "none") {
-        targetDiv.style.display = "none";
-    } else {
-        targetDiv.style.display = "block";
-    }
-};
-
+/* 
 $(document).ready(function () {
-
     $("#secondary").click(function () {
-        $('.tab-pane').removeClass('active');
-        $(".tab-pane").toggleClass("#secondary");
-        $(this).addClass('active');
-        $("#tertiary").hide();
-        $($(this).attr('href')).show();
+        $('#secondary-content').show();
+        $('#tertiary-content').hide();
     });
 
     $("#tertiary").click(function () {
-        $('.tab-pane').removeClass('active');
-        $(".tab-pane").toggleClass("#tertiary");
-        $(this).addClass('active');
-        $("#secondary").hide();
-        $($(this).attr('href')).show();
+        $('#secondary-content').hide();
+        $('#tertiary-content').show();
+    });
+});
+
+ */
+$(document).ready(function () {
+// Achievements Toggle
+    $('a[href="#academic"]').click(function () {
+        $('#academic-content').slideDown('slow');
+        $('#acting-content').slideUp('slow');
+        $('#public_speaking-content').slideUp('slow');
+        $('#leadership-content').slideUp('slow');
     });
 
-});
+    $('a[href="#acting"]').click(function () {
+        $('#academic-content').slideUp('slow');
+        $('#acting-content').slideDown('slow');
+        $('#public_speaking-content').slideUp('slow');
+        $('#leadership-content').slideUp('slow');
+    });
 
+    $('a[href="#leadership"]').click(function () {
+        $('#academic-content').slideUp('slow');
+        $('#acting-content').slideUp('slow');
+        $('#public_speaking-content').slideUp('slow');
+        $('#leadership-content').slideDown('slow');
+    });
 
-$("#academic").click(function () {
-    $('.achievements-pane').removeClass('active');
-    $(".achievements-pane").toggleClass("#academic");
-    $(this).addClass('active');
-    $("#leadership").hide();
-    $("#acting").hide();
-    $("#public_speaking").hide();
-    $($(this).attr('href')).show();
-});
-
-$("#leadership").click(function () {
-    $('.achievements-pane').removeClass('active');
-    $(".achievements-pane").toggleClass("#leadership");
-    $(this).addClass('active');
-    $("#academic").hide();
-    $("#acting").hide();
-    $("#public_speaking").hide();
-    $($(this).attr('href')).show();
-});
-
-$("#acting").click(function () {
-    $('.achievements-pane').removeClass('active');
-    $(".achievements-pane").toggleClass("#acting");
-    $(this).addClass('active');
-    $("#leadership").hide();
-    $("#academic").hide();
-    $("#public_speaking").hide();
-    $($(this).attr('href')).show();
-});
-
-$("#public_speaking").click(function () {
-    $('.achievements-pane').removeClass('active');
-    $(".achievements-pane").toggleClass("#public_speaking");
-    $(this).addClass('active');
-    $("#leadership").hide();
-    $("#acting").hide();
-    $("#academics").hide();
-    $($(this).attr('href')).show();
+    $('a[href="#public_speaking"]').click(function () {
+        $('#academic-content').slideUp('slow');
+        $('#acting-content').slideUp('slow');
+        $('#public_speaking-content').slideDown('slow');
+        $('#leadership-content').slideUp('slow');
+    });
 });
 
 $("#successfully-sent").click(function () {
