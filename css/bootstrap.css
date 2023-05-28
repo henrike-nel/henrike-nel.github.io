@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 html {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -107,7 +109,7 @@ svg:not(:root) {
 }
 
 button, input, optgroup, select, textarea {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
@@ -123,7 +125,7 @@ button, select {
 
 button, html [type="button"], [type="reset"], [type="submit"] {
     -webkit-appearance: button;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
 }
